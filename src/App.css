@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+
+@theme{
+    primaryclr:#000000;
+}

@@ -1,9 +1,10 @@
 import React from 'react'
 
+
 const Home = () => {
   return (
     <>
-    <h2>I am home</h2>
+    <h2 className='primaryclr'>I am home</h2>
     </>
   )
 }
