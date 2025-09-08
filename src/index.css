@@ -1,9 +1,12 @@
 @import "tailwindcss";
-
+@utility container {
+  margin-inline: auto;
+}
 
 :root{
-    background-color: black;    
+
 }
+
 
 .container{
     max-width: fit-content;
@@ -11,6 +14,12 @@
 
 
 @theme{
+/* color variable */
     --color-primaryclr:#FBFBFB;
     --color-brandclr:#64CCC5;
+
+/* font variable */
+
+    --font-dm:"DM Sans", sans-serif;
+    --font-roboto:"Roboto Serif", serif;
 }
