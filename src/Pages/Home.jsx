@@ -21,8 +21,12 @@ const Home = () => {
           </div>
     </div>
     <div className=' w-[400px] h-[400px] bg-red-200 absolute top-[100px] right-0'>
-      <div className='w-[200px] h-[200px] bg-red-400 absolute top-[50%] left-[50%] translate:-50% -50% ' ></div>      
+      <div className='w-[200px] h-[200px] bg-red-400 absolute top-[50%] left-[50%] -translate-1/2 '>
     </div>
+      <div className='w-[100px] h-[100px] bg-blue-400 absolute top-[50%] left-[50%] -translate-1/2 '>
+      <img src="/src/Images/Ellipse 10.png" alt="" />
+    </div>
+      </div>      
     </section>
 
 
