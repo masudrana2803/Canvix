@@ -3,7 +3,7 @@ import React from 'react'
 const Navbar = () => {
   return (
     <>
-      <nav className='lg:w-[fit] p-[30px] h-[54px] bg-black'>
+      <nav className='lg:w-[fit] p-[30px] h-[54px] bg-black pr-[173px] pl-[173px] '>
         <div className='flex justify-around text-white'>
         <div>
             <a href="#"><img src="/src/Images/logo.png" alt="" /></a>
