@@ -22,18 +22,18 @@ const Home = () => {
       <div>
         <h2 className='text-brandclr p-[0px] font-roboto text-[26px] '>Trusted by Leading Brands</h2>
         </div> 
-        <div id='brand_images' className='flex p-[8px] gap-[10px] pb-[119px] '>
-          <img src="../Images/brand1.png" alt="brand1" />
-          <img src="../Images/brand2.png" alt="brand2" />
-          <img src="../Images/brand3.png" alt="brand3" />
-          <img src="../Images/brand4.png" alt="brand4" />
+        <div id='brand_images' className='flex p-[8px] gap-[10px] pb-[119px]  '>
+          <img src="/src/Images/brand1.png" alt="brand1" />
+          <img src="/src/Images/brand2.png" alt="brand2" />
+          <img src="/src/Images/brand3.png" alt="brand3" />
+          <img src="/src/Images/brand4.png" alt="brand4" />
           </div> 
           </div>
     </div>
-    <div className=' w-[450px] h-[450px] absolute top-[100px] rounded-[50%] right-0 border-[#99EDE5] border-2 mt-[80px] mr-[173px] '>
-      <div className='w-[400px] h-[400px] absolute top-[50%] rounded-[50%] left-[50%] -translate-1/2 border-[#B2F1EB] border-2 '>
+    <div className=' w-[850px] h-[850px] absolute top-[100px] rounded-[50%] right-0 border-[#99EDE5] border-2 mt-[80px] m-[173px] '>
+      <div className='w-[750px] h-[750px] absolute top-[50%] rounded-[50%] left-[50%] -translate-1/2 border-[#B2F1EB] border-2 '>
     </div>
-      <div className='w-[350px] h-[350px] absolute rounded-[50%] border-black border-2 top-[50%] left-[50%] -translate-1/2 '>
+      <div className='w-[650px] h-[650px] absolute rounded-[50%] border-black border-2 top-[50%] left-[50%] -translate-1/2 '>
       <img src="/src/Images/Ellipse 10.png" alt="" />
     </div>
       </div>    
