@@ -1,7 +1,9 @@
 import React from 'react'
 import Commonhead from '../Tools/Commonhead'
 import { SlPencil } from "react-icons/sl"
+import { IoIosArrowDroprightCircle } from "react-icons/io";
 import Commoncard from '../Tools/Commoncard'
+import Trialbtn from '../Tools/Trialbtn';
 
 const Home = () => {
   return (
@@ -20,7 +22,21 @@ const Home = () => {
             <div className='font-dm text-white text-[20px] w-[557px] font-weight:400 '>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit- et ut massa libero egestas malesuada viverra gravida libero cursus nulla leo pulvinar.</p>
             </div>
-            <button className='w-[248px] text-black bg-white mb-[131px] p-[10px] mt-[32px] rounded-[23px] '>Start your free trial</button>
+            <Trialbtn content1={<IoIosArrowDroprightCircle />} content2={"Start Your Free Trial"}/>
+
+            {/* <div className='flex w-[248px] text-black bg-white mb-[131px] p-[10px] mt-[32px] rounded-[23px] '>
+            <div className=' text-2xl '>
+              <IoIosArrowDroprightCircle />
+            </div>
+            <div>
+            <button >  Start your free trial</button>
+
+            </div>
+
+            </div> */}
+            
+      
+      
       <div>
         <h2 className='text-brandclr p-[0px] font-roboto text-[26px] '>Trusted by Leading Brands</h2>
         </div> 
@@ -67,7 +83,18 @@ const Home = () => {
   </div>
 </div>
 
-<section id='About'className=''>
+<section id='About'className=' pt-[100px] pb-[100px] pl-[260px] pr-[260px] bg-black '>
+<div>
+  <div className='w-[640px] h-[640px]'>
+<img src="/src/Images/AboutImage1.png" alt="AboutImage1" />
+{/* <img src="/src/Images/AboutImage2.png" alt="AboutImage2" />
+<img src="/src/Images/AboutImage3.jpg" alt="AboutImage3" /> */}
+  </div>
+  <div>
+
+  </div>
+</div>
+
 
 </section>
 
