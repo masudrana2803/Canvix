@@ -55,13 +55,13 @@ const Home = () => {
 </section>
 <div className="container">
 
-  <div className='flex flex-wrap gap-[66px] justify-between p-[260px] pt-0 pb-0'>
+  <div className='flex flex-wrap gap-[66px] justify-between p-[260px] pt-0 pb-[93px]'>
 <Commoncard content1={<SlPencil/>} content2={'Content Marketing '} content3={'Our team creates engaging and shareable content that resonates with your audience, drives organic traffic'}/>
-<Commoncard/>
-<Commoncard/>
-<Commoncard/>
-<Commoncard/>
-<Commoncard/>
+<Commoncard content1={<SlPencil/>} content2={'Graphic Design'} content3={'Unlock the power of visual storytelling with our expert graphic design services tailored to elevate your brand and captivate.'}/>
+<Commoncard content1={<SlPencil/>}/>
+<Commoncard content1={<SlPencil/>}/>
+<Commoncard content1={<SlPencil/>}/>
+<Commoncard content1={<SlPencil/>}/>
 
 
   </div>
