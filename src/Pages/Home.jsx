@@ -83,19 +83,36 @@ const Home = () => {
   </div>
 </div>
 
-<section id='About'className=' pt-[100px] pb-[100px] pl-[260px] pr-[260px] bg-black '>
-<div>
-  <div className='w-[640px] h-[640px]'>
+<section id='About'className=' pt-[100px] pl-[260px] pr-[260px] bg-black'>
+<div className='flex gap-14'>
+  <div className='w-[640px]'>
 <img src="/src/Images/AboutImage1.png" alt="AboutImage1" />
 {/* <img src="/src/Images/AboutImage2.png" alt="AboutImage2" />
 <img src="/src/Images/AboutImage3.jpg" alt="AboutImage3" /> */}
   </div>
-  <div>
+  <div className='w-[586px] h-[544px] text-white mt-[-10px]'>
+    <div className='flex'>
+        <Commonhead content1="About Us"/>
+    </div>
+      <h2 className='font-roboto font-[600] text-[64px] w-[540px] tracking-wider leading-13 pb-1 '>The core mission behind all our work</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit metus ut tortor purus tincidunt sed lectus ut eros, turpis tincidunt id.</p>
+      <img src="/src/Images/AboutCounter.png" alt="about" />
+      <Trialbtn content1={<IoIosArrowDroprightCircle />} content2={"Start Your Free Trial"}/>
+
 
   </div>
 </div>
 
 
+</section>
+
+<section id='process' className='pt-[107px]'>
+<div className='w-[619px] m-auto mb-[80px] '>
+  <Commonhead content1={'Process'} content2={"Process that moves things forward"}/>
+</div>
+<div></div>
+<div></div>
+<div></div>
 </section>
 
 

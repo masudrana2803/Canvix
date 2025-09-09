@@ -4,7 +4,7 @@ const Commonhead = ({content1,content2}) => {
   return (
     <>
       <h2 className='text-brandclr text-center font-dm font-[600] text-[30px]'>{content1}</h2>
-      <p className='text-black text-center font-roboto text-[60px] font-[600] p-0 m-0 tracking-wider leading-15 ' >{content2}</p>
+      <p className='text-black text-center font-roboto text-[60px] font-[600] p-0 m-0 tracking-tight leading-15 ' >{content2}</p>
 
       
 
