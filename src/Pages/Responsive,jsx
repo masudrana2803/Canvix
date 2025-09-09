@@ -1,0 +1,72 @@
+import React from 'react'
+import Commonhead from '../Tools/Commonhead'
+import { SlPencil } from "react-icons/sl"
+import Commoncard from '../Tools/Commoncard'
+
+const Home = () => {
+  return (
+    <>
+      {/* Banner Section */}
+      <section id='Bannerpart' className='bg-black min-h-screen px-4 py-8'>
+        <div className='flex flex-col md:flex-row text-white items-center'>
+          <img className='w-full md:w-auto mt-4' src="/src/Images/bannerPat.png" alt="Banner Pattern" />
+
+          <div id="banner" className='mt-8 md:mt-[100px] md:ml-[40px] max-w-full md:max-w-[608px] text-center md:text-left'>
+            <div id="bannertxt" className='text-white font-semibold text-3xl md:text-[64px]'>
+              <h2>Ready to take your</h2>
+              <h2 className='text-brandclr'>Business Growth</h2>
+              <h2>to the next level?</h2>
+            </div>
+            <p className='font-dm text-white text-base md:text-[20px] mt-4'>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut massa libero egestas malesuada viverra gravida libero cursus nulla leo pulvinar.
+            </p>
+            <button className='w-full md:w-[248px] text-black bg-white p-3 mt-6 rounded-full'>
+              Start your free trial
+            </button>
+
+            <h2 className='text-brandclr font-roboto text-lg md:text-[26px] mt-8'>Trusted by Leading Brands</h2>
+            <div id='brand_images' className='flex flex-wrap justify-center gap-4 mt-4'>
+              <img className='w-[80px]' src="/src/Images/brand1.png" alt="brand1" />
+              <img className='w-[80px]' src="/src/Images/brand2.png" alt="brand2" />
+              <img className='w-[80px]' src="/src/Images/brand3.png" alt="brand3" />
+              <img className='w-[80px]' src="/src/Images/brand4.png" alt="brand4" />
+            </div>
+          </div>
+        </div>
+
+        {/* Decorative Circles */}
+        <div className='relative w-full flex justify-center mt-16'>
+          <div className='w-[300px] h-[300px] md:w-[800px] md:h-[800px] rounded-full border-2 border-[#99EDE5] flex items-center justify-center'>
+            <div className='w-[250px] h-[250px] md:w-[700px] md:h-[700px] rounded-full border-2 border-[#B2F1EB] flex items-center justify-center'>
+              <div className='w-[200px] h-[200px] md:w-[650px] md:h-[650px] rounded-full border-2 border-black overflow-hidden'>
+                <img className='w-full h-full object-cover' src="/src/Images/Ellipse 10.png" alt="Ellipse" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section id='Services' className='mt-16 px-4 text-center'>
+        <Commonhead content1="Our Services" />
+        <div className='mt-4 mb-8'>
+          <Commonhead content2="High-impact services for your business" />
+        </div>
+      </section>
+
+      {/* Cards Section */}
+      <div className='px-4'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 gap-6'>
+          <Commoncard content1={<SlPencil />} content2={'Content Marketing'} content3={'Our team creates engaging and shareable content that resonates with your audience, drives organic traffic'} />
+          <Commoncard content1={<SlPencil />} content2={'Graphic Design'} content3={'Unlock the power of visual storytelling with our expert graphic design services tailored to elevate your brand and captivate.'} />
+          <Commoncard content1={<SlPencil />} />
+          <Commoncard content1={<SlPencil />} />
+          <Commoncard content1={<SlPencil />} />
+          <Commoncard content1={<SlPencil />} />
+        </div>
+      </div>
+    </>
+  )
+}
+
+export default Home
