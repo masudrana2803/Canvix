@@ -3,3 +3,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+
+
+  /* <div className='w-[422px] h-[368px] bg-black rounded-[20px] p-[45px] text-white'>
+    <button className='w-[80px] h-[80px] text-center bg-white text-black rounded-[50%] p-8'><SlPencil /></button>
+    <h1 className='mb-[15px] text-[25px] w-[232px] font-[500] font-roboto '>Content Marketing </h1>
+    <h1 className='text-[15px] w-[232px] font-dm font-[400]'>Our team creates engaging and shareable content that resonates with your audience, drives organic traffic</h1>
+  </div> */
