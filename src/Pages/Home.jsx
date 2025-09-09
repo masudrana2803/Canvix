@@ -58,14 +58,18 @@ const Home = () => {
   <div className='flex flex-wrap gap-[66px] justify-between p-[260px] pt-0 pb-[93px]'>
 <Commoncard content1={<SlPencil/>} content2={'Content Marketing '} content3={'Our team creates engaging and shareable content that resonates with your audience, drives organic traffic'}/>
 <Commoncard content1={<SlPencil/>} content2={'Graphic Design'} content3={'Unlock the power of visual storytelling with our expert graphic design services tailored to elevate your brand and captivate.'}/>
-<Commoncard content1={<SlPencil/>}/>
-<Commoncard content1={<SlPencil/>}/>
-<Commoncard content1={<SlPencil/>}/>
-<Commoncard content1={<SlPencil/>}/>
+<Commoncard content1={<SlPencil/>} content2={'Digital Marketing '} content3={"Elevate your brand's online presence with our data-driven digital marketing strategies. From SEO and content marketing"}/>
+<Commoncard content1={<SlPencil/>} content2={'Web Design'} content3={'We specialize in creating visually stunning, user-friendly websites that align with your brand identity and deliver an exceptional.'}/>
+<Commoncard content1={<SlPencil/>} content2={'IT Consulting'} content3={'IT consulting, or information technology consulting, refers to the practice of providing advisory and implementation services'}/>
+<Commoncard content1={<SlPencil/>} content2={'Brand Identity '} content3={'It involves creating a unique and recognizable identity that sets the brand apart from competitors and resonates with the target audience.'}/>
 
 
   </div>
 </div>
+
+<section id='About'className=''>
+
+</section>
 
 
 

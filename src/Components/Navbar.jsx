@@ -9,7 +9,7 @@ const Navbar = () => {
             <a href="#"><img src="/src/Images/logo.png" alt="" /></a>
         </div>
         <div>
-        <ul className='flex gap-[30px] lg:w-[306px] lg:h-[36px] p-[9px] '>
+        <ul className='flex gap-[30px] lg:w-[306px] lg:h-[36px] p-[9px] text-[20px] font-[400] font-dm '>
             <a href="#">
             <li>Home</li>
             </a>
