@@ -1,4 +1,7 @@
 import React from 'react'
+import { FaFacebook } from "react-icons/fa";
+import { FaInstagramSquare } from "react-icons/fa";
+import { TiSocialLinkedinCircular } from "react-icons/ti";
 
 const Footer = () => {
   return (
@@ -42,10 +45,28 @@ const Footer = () => {
         </div>
         </div>
 
-          <div className='border-[#F4F4F4] border-5'>
-            
+          <div className='bg-[#F4F4F4] h-[2px] mb-8 '>
           </div>
+              <div id='FooterLast' className='flex justify-around flex gap-[105px]  text-white pt-[29px] pl-[100px] pr-[100px] pb-[100px]'>
+              <div>
+                <h2 className='text-[20px] font-roboto font-[600]'>Copyright by</h2>
+                <p>Designed by Iconstica.com</p>
+              </div>
+              <div>
+                <h2 className='text-[20px] font-roboto font-[600]'>Contact us</h2>
+                <p>+0 12 457 4578</p>
+              </div>
+              <div>
+                <h2 className='text-[20px] font-roboto font-[600]'>Address</h2>
+                <p>119 Tanglewood Lane Gulfport, MS 39503</p>
+              </div>
+              <div className='flex justify-between items-center text-3xl gap-4'>
+                <FaFacebook/>
+                <FaInstagramSquare/>
+                <TiSocialLinkedinCircular/>
+              </div>
 
+              </div>
         </div>
       </footer>
       
