@@ -3,13 +3,11 @@
 import React from 'react'
 import Commonhead from '../Tools/Commonhead'
 import { SlPencil } from "react-icons/sl"
-import { IoIosArrowDroprightCircle } from "react-icons/io";
+import { IoIosArrowDroprightCircle, IoIosArrowDropleftCircle, IoIosArrowDropright } from "react-icons/io";
 import { TfiLightBulb } from "react-icons/tfi";
 import { CiMail } from "react-icons/ci";
 import { VscCircuitBoard } from "react-icons/vsc";
 import { LiaCheckDoubleSolid } from "react-icons/lia";
-import { IoIosArrowDropleftCircle } from "react-icons/io";
-import { IoIosArrowDropright } from "react-icons/io";
 import Commoncard from '../Tools/Commoncard'
 import Trialbtn from '../Tools/Trialbtn';
 import CommonProcess from '../Tools/CommonProcess';
@@ -18,176 +16,141 @@ import TrialbtnB from '../Tools/TrialbtnB';
 const Home = () => {
   return (
     <>
-    {/* ========== Banner Section ========== */}
-    <section id='Bannerpart' className='bg-black h-auto lg:h-screen overflow-hidden relative pt-24 pb-12 md:pt-32'>
-      <div className='container mx-auto px-4'>
-        <div className='flex flex-col lg:flex-row items-center text-white'>
-          {/* Left pattern image - hidden on small screens for better layout */}
-          <div className='hidden lg:block'>
-            <img className='mt-[-60px]' src="/src/Images/bannerPat.png" alt="" />
-          </div>
-
-          {/* Banner Text Content */}
-          <div id="banner" className='z-10 text-center lg:text-left lg:ml-16 xl:ml-24'>
-            <div id="bannertxt" className='text-white font-semibold text-4xl sm:text-5xl lg:text-[64px] leading-tight'>
-                <h2>Ready to take your </h2>
-                <h2 className='text-brandclr'>Business Growth </h2>
-                <h2>to the next level?</h2>
-            </div>
-            <div className='font-dm text-white text-lg md:text-xl max-w-xl mx-auto lg:mx-0 mt-6'>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit- et ut massa libero egestas malesuada viverra gravida libero cursus nulla leo pulvinar.</p>
-            </div>
-            <div className='mt-8'>
-              <Trialbtn content1={<IoIosArrowDroprightCircle />} content2={"Start Your Free Trial"}/>   
-            </div>
-            <div className='mt-12'>
-              <h2 className='text-brandclr p-0 font-roboto text-2xl'>Trusted by Leading Brands</h2>
-            </div> 
-            <div id='brand_images' className='flex flex-wrap justify-center lg:justify-start items-center gap-4 md:gap-6 mt-4'>
-              <img src="/src/Images/brand1.png" alt="brand1" className="h-8 md:h-10" />
-              <img src="/src/Images/brand2.png" alt="brand2" className="h-8 md:h-10" />
-              <img src="/src/Images/brand3.png" alt="brand3" className="h-8 md:h-10" />
-              <img src="/src/Images/brand4.png" alt="brand4" className="h-8 md:h-10" />
-            </div> 
-          </div>
+    {/* Banner */}
+    <section id='Bannerpart' className='bg-black min-h-screen flex flex-col md:flex-row items-center justify-center px-6 md:px-12 relative overflow-hidden'>
+      <div className='flex-1 flex justify-center z-10'>
+        <img className='max-w-xs md:max-w-md lg:max-w-lg mt-8 md:mt-0' src="/src/Images/bannerPat.png" alt="banner" />
+      </div>
+      <div id="banner" className='flex-1 text-center md:text-left mt-8 md:mt-0 z-10'>
+        <h2 className='text-3xl md:text-5xl lg:text-6xl font-semibold text-white'>Ready to take your</h2>
+        <h2 className='text-brandclr text-3xl md:text-5xl lg:text-6xl font-semibold'>Business Growth</h2>
+        <h2 className='text-3xl md:text-5xl lg:text-6xl font-semibold text-white'>to the next level?</h2>
+        <p className='mt-4 text-base md:text-lg lg:text-xl text-white max-w-lg mx-auto md:mx-0'>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit- et ut massa libero egestas malesuada viverra gravida libero cursus nulla leo pulvinar.
+        </p>
+        <div className='mt-6 flex flex-col md:flex-row gap-4 items-center'>
+          <Trialbtn content1={<IoIosArrowDroprightCircle />} content2={"Start Your Free Trial"}/>   
         </div>
+        <h2 className='text-brandclr font-roboto text-xl md:text-2xl mt-8'>Trusted by Leading Brands</h2>
+        <div id='brand_images' className='flex flex-wrap justify-center md:justify-start gap-4 mt-4'>
+          <img src="/src/Images/brand1.png" alt="brand1" className='h-10 md:h-12'/>
+          <img src="/src/Images/brand2.png" alt="brand2" className='h-10 md:h-12'/>
+          <img src="/src/Images/brand3.png" alt="brand3" className='h-10 md:h-12'/>
+          <img src="/src/Images/brand4.png" alt="brand4" className='h-10 md:h-12'/>
+        </div> 
       </div>
 
-      {/* Decorative Circles - Adjusted for responsiveness, hidden on small screens */}
-      <div className='hidden md:block absolute w-[800px] h-[800px] rounded-full border-[#99EDE5] border-2 top-1/4 -right-1/2 md:top-1/4 md:-right-1/4 lg:top-[80px] lg:right-[-350px] z-0'>
-        <div className='w-[700px] h-[700px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border-[#B2F1EB] border-2 '>
-      </div>
-        <div className='w-[650px] h-[650px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border-black border-2 '>
-        <img src="/src/Images/Ellipse 10.png" alt="" className='object-cover w-full h-full' />
-      </div>
-        </div>    
-    </section>
-
-
-    {/* ========== Services Section ========== */}
-    <section id='Services' className='py-16 md:py-24'>
-        <div className="container mx-auto px-4 text-center">
-            <div className='max-w-3xl mx-auto mb-12 md:mb-20'>
-                <Commonhead content1="Our Services"/>
-                <Commonhead content2="High-impact services for your business"/>
-            </div>
-            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12'>
-                <Commoncard content1={<SlPencil/>} content2={'Content Marketing '} content3={'Our team creates engaging and shareable content that resonates with your audience, drives organic traffic'}/>
-                <Commoncard content1={<SlPencil/>} content2={'Graphic Design'} content3={'Unlock the power of visual storytelling with our expert graphic design services tailored to elevate your brand and captivate.'}/>
-                <Commoncard content1={<SlPencil/>} content2={'Digital Marketing '} content3={"Elevate your brand's online presence with our data-driven digital marketing strategies. From SEO and content marketing"}/>
-                <Commoncard content1={<SlPencil/>} content2={'Web Design'} content3={'We specialize in creating visually stunning, user-friendly websites that align with your brand identity and deliver an exceptional.'}/>
-                <Commoncard content1={<SlPencil/>} content2={'IT Consulting'} content3={'IT consulting, or information technology consulting, refers to the practice of providing advisory and implementation services'}/>
-                <Commoncard content1={<SlPencil/>} content2={'Brand Identity '} content3={'It involves creating a unique and recognizable identity that sets the brand apart from competitors and resonates with the target audience.'}/>
-            </div>
-        </div>
-    </section>
-
-    {/* ========== About Section ========== */}
-    <section id='About'className='py-16 md:py-24 bg-black text-white'>
-      <div className='container mx-auto px-4'>
-        <div className='flex flex-col lg:flex-row gap-12 lg:gap-16 items-center'>
-          <div className='w-full lg:w-1/2'>
-            <img src="/src/Images/AboutImage1.png" alt="AboutImage1" className="w-full h-auto rounded-lg" />
-          </div>
-          <div className='w-full lg:w-1/2 text-center lg:text-left'>
-            <div>
-                <Commonhead content1="About Us"/>
-            </div>
-              <h2 className='font-roboto font-semibold text-4xl md:text-5xl leading-tight mt-4'>The core mission behind all our work</h2>
-              <p className='mt-6 text-lg'>Lorem ipsum dolor sit amet, consectetur adipiscing elit metus ut tortor purus tincidunt sed lectus ut eros, turpis tincidunt id.</p>
-              <img src="/src/Images/AboutCounter.png" alt="about counter" className='my-8 mx-auto lg:mx-0' />
-              <Trialbtn content1={<IoIosArrowDroprightCircle />} content2={"Start Your Free Trial"}/>
+      {/* Responsive Decorative Circles */}
+      <div className='absolute right-[-150px] top-1/2 -translate-y-1/2 scale-75 sm:scale-90 md:scale-100 lg:scale-110 xl:scale-125'>
+        <div className='relative w-[300px] sm:w-[400px] md:w-[600px] lg:w-[750px] aspect-square rounded-full border-2 border-[#99EDE5]'>
+          <div className='absolute w-[80%] aspect-square rounded-full border-2 border-[#B2F1EB] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'></div>
+          <div className='absolute w-[70%] aspect-square rounded-full border-2 border-black top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center'>
+            <img src="/src/Images/Ellipse 10.png" alt="circle" className='max-w-full object-contain'/>
           </div>
         </div>
       </div>
     </section>
 
-    {/* ========== Process Section ========== */}
-    <section id='process' className='py-16 md:py-24'>
-        <div className='container mx-auto px-4 text-center'>
-            <div className='max-w-2xl mx-auto mb-12 md:mb-20'>
-                <Commonhead content1={'Process'} content2={"Process that moves things forward"}/>
-            </div>
-            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8'>
-                <CommonProcess content1={<TfiLightBulb/>} content2={'Ideate'} content3={'The ideation process is a crucial phase in the design process where creative thinking and brainstorming'}/>
-                <CommonProcess content1={<CiMail/>} content2={'Research'} content3={'Research is a critical component of the design process, helping designers understand the problem'}/>
-                <CommonProcess content1={<VscCircuitBoard/>} content2={'Create'} content3={'Designing a process involves several key steps to ensure clarity, efficiency, successful implementation'} />
-                <CommonProcess content1={<LiaCheckDoubleSolid/>} content2={'Testing'} content3={'Testing is a crucial phase in the design process to ensure that the product or system meets the specified requirements'}/>
-            </div>
-        </div>
+    {/* Services */}
+    <section id='Services' className='mt-20 px-6 md:px-12'>
+      <div className='text-center max-w-2xl mx-auto'>
+        <Commonhead content1="Our Services"/>
+        <Commonhead content2="High-impact services for your business"/>
+      </div>
+      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12'>
+        <Commoncard content1={<SlPencil/>} content2={'Content Marketing '} content3={'Our team creates engaging and shareable content that resonates with your audience, drives organic traffic'}/>
+        <Commoncard content1={<SlPencil/>} content2={'Graphic Design'} content3={'Unlock the power of visual storytelling with our expert graphic design services tailored to elevate your brand and captivate.'}/>
+        <Commoncard content1={<SlPencil/>} content2={'Digital Marketing '} content3={"Elevate your brand's online presence with our data-driven digital marketing strategies. From SEO and content marketing"}/>
+        <Commoncard content1={<SlPencil/>} content2={'Web Design'} content3={'We specialize in creating visually stunning, user-friendly websites that align with your brand identity and deliver an exceptional.'}/>
+        <Commoncard content1={<SlPencil/>} content2={'IT Consulting'} content3={'IT consulting, or information technology consulting, refers to the practice of providing advisory and implementation services'}/>
+        <Commoncard content1={<SlPencil/>} content2={'Brand Identity '} content3={'It involves creating a unique and recognizable identity that sets the brand apart from competitors and resonates with the target audience.'}/>
+      </div>
     </section>
 
-    {/* ========== Showcase Section ========== */}
-    <section id='Showcase' className='py-16 md:py-24 relative'>
-      <div className="container mx-auto px-4">
-        <div className='flex flex-col md:flex-row justify-between items-center mb-12'>
-            <div className='text-center md:text-left'>
-                <Commonhead content2={'Recent Showcase'}/>
-            </div>
-            <div className='mt-6 md:mt-0'>
-                <TrialbtnB content1={<IoIosArrowDroprightCircle/>} content2={'See More Work'}/>
-            </div>
+    {/* About */}
+    <section id='About'className='py-16 px-6 md:px-20 bg-black'>
+      <div className='flex flex-col lg:flex-row items-center gap-10'>
+        <div className='flex-1'>
+          <img className='w-full max-w-md mx-auto' src="/src/Images/AboutImage1.png" alt="About" />
         </div>
-
-        <div id='ShowcaseImage' className='grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10'>
-          {/* Column 1 */}
-          <div className='flex flex-col gap-8 lg:gap-10'>
-            <div className='w-full'>
-              <img src="/src/Images/Showcase1.jpg" alt="Web UI Design" className='w-full h-auto rounded-lg' />
-              <h2 className='text-2xl font-roboto font-semibold mt-4'>Web UI design</h2>
-              <p className='text-base font-dm tracking-wide '>Creative UI design</p>
-            </div>
-            <div className='w-full'>
-              <img src="/src/Images/Showcase2.jpg" alt="UI Design" className='w-full h-auto rounded-lg' />
-              <h2 className='text-2xl font-roboto font-semibold mt-4'>UI Design</h2>
-              <p className='text-base font-dm tracking-wide'>Creative Rebranding for logo</p>
-            </div>
-          </div>
-          {/* Column 2 - with top margin for staggered effect on medium screens and up */}
-          <div className='flex flex-col gap-8 lg:gap-10 md:mt-24'>
-            <div className='w-full'>
-              <img src="/src/Images/Showcase3.jpg" alt="Digital Strategy" className='w-full h-auto rounded-lg' />
-              <h2 className='text-2xl font-roboto font-semibold mt-4'>To design Digital Strategy</h2>
-              <p className='text-base font-dm tracking-wide'>Social Media Marketing</p>
-            </div>
-            <div className='w-full'>
-              <img src="/src/Images/Showcase4.jpg" alt="UI Design 2" className='w-full h-auto rounded-lg' />
-              <h2 className='text-2xl font-roboto font-semibold mt-4'>UI Design</h2>
-              <p className='text-base font-dm tracking-wide'>Creative Rebranding for logo</p>
-            </div>
-          </div>
+        <div className='flex-1 text-white text-center lg:text-left'>
+          <Commonhead content1="About Us"/>
+          <h2 className='text-3xl md:text-5xl font-bold leading-tight mt-4'>The core mission behind all our work</h2>
+          <p className='mt-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit metus ut tortor purus tincidunt sed lectus ut eros, turpis tincidunt id.</p>
+          <img className='my-6 max-w-xs mx-auto lg:mx-0' src="/src/Images/AboutCounter.png" alt="about" />
+          <Trialbtn content1={<IoIosArrowDroprightCircle />} content2={"Start Your Free Trial"}/>
         </div>
       </div>
     </section>
 
-    {/* ========== Testimonial Slider Section ========== */}
-    <section id='SliderBottom' className='py-16 md:py-24' >
-      <div className="container mx-auto px-4">
-            <div className='bg-[#F4F4F4] max-w-4xl mx-auto text-black text-center p-8 md:p-12 rounded-lg'>
-                <div className='w-24 h-24 md:w-32 md:h-32 mx-auto mb-6'>
-                <img className='rounded-full w-full h-full object-cover' src="/src/Images/Personimage.png" alt="Jacqueline Miller" />
-                </div>
-
-                <blockquote className='mb-6 text-lg md:text-xl font-dm font-bold'>
-                  <p>“Be genuine in your assessment, and provide constructive feedback to benefit both potential customers and the company providing the product or service.”</p>
-                </blockquote>
-                <h3 className='text-xl font-roboto font-semibold tracking-wide'>Jacqueline Miller</h3>
-                <p className='mb-6'>CEO of an eduport</p>
-
-                  <div className='text-3xl md:text-4xl flex justify-center gap-4'>
-                    <button className='hover:text-brandclr transition-colors'><IoIosArrowDropleftCircle/></button>
-                    <button className='hover:text-brandclr transition-colors'><IoIosArrowDropright/></button>
-                  </div>
-            </div>
+    {/* Process */}
+    <section id='process' className='py-16 px-6 md:px-12'>
+      <div className='max-w-xl mx-auto mb-12 text-center'>
+        <Commonhead content1={'Process'} content2={"Process that moves things forward"}/>
+      </div>
+      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8'>
+        <CommonProcess content1={<TfiLightBulb/>} content2={'Ideate'} content3={'The ideation process is a crucial phase in the design process where creative thinking and brainstorming'}/>
+        <CommonProcess content1={<CiMail/>} content2={'Research'} content3={'Research is a critical component of the design process, helping designers understand the problem'}/>
+        <CommonProcess content1={<VscCircuitBoard/>} content2={'Create'} content3={'Designing a process involves several key steps to ensure clarity, efficiency, successful implementation'} />
+        <CommonProcess content1={<LiaCheckDoubleSolid/>} content2={'Testing'} content3={'Testing is a crucial phase in the design process to ensure that the product or system meets the specified requirements'}/>
       </div>
     </section>
 
+    {/* Showcase */}
+    <section id='Showcase' className='py-16 px-6 md:px-12 relative'>
+      <div className='text-center mb-12'>
+        <Commonhead content2={'Recent Showcase'}/>
+      </div>
+      <div className='absolute top-10 right-6'>
+        <TrialbtnB content1={<IoIosArrowDroprightCircle/>} content2={'Start Your Free Trial'}/>
+      </div>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
+        <div>
+          <img src="/src/Images/Showcase1.jpg" alt="" className='w-full rounded'/>
+          <h2 className='text-xl md:text-2xl font-semibold mt-4'>Web UI design</h2>
+          <p className='text-base'>Creative UI design</p>
+        </div>
+        <div>
+          <img src="/src/Images/Showcase2.jpg" alt="" className='w-full rounded'/>
+          <h2 className='text-xl md:text-2xl font-semibold mt-4'>UI Design</h2>
+          <p className='text-base'>Creative Rebranding for logo</p>
+        </div>
+        <div>
+          <img src="/src/Images/Showcase3.jpg" alt="" className='w-full rounded'/>
+          <h2 className='text-xl md:text-2xl font-semibold mt-4'>To design Digital Strategy</h2>
+          <p className='text-base'>Social Media Marketing</p>
+        </div>
+        <div>
+          <img src="/src/Images/Showcase4.jpg" alt="" className='w-full rounded'/>
+          <h2 className='text-xl md:text-2xl font-semibold mt-4'>UI Design</h2>
+          <p className='text-base'>Creative Rebranding for logo</p>
+        </div>
+      </div>
+    </section>
+
+    {/* Slider Bottom */}
+    <section id='SliderBottom' className='py-16 px-6 md:px-12'>
+      <div className='bg-[#F4F4F4] rounded-xl text-black text-center p-8 max-w-3xl mx-auto'>
+        <div className='w-24 h-24 flex items-center justify-center m-auto'>
+          <img className='rounded-full mb-7 w-24 h-24 object-cover' src="/src/Images/Personimage.png" alt="" />
+        </div>
+        <h2 className='mb-7 text-lg md:text-xl font-dm font-bold'>
+          “Be genuine in your assessment, and provide constructive feedback to benefit both potential customers and the company providing the product or service.”
+        </h2>
+        <h2 className=' text-lg font-roboto font-semibold tracking-wide'>Jacqueline Miller</h2>
+        <h2 className='mb-7'>CEO of an eduport</h2>
+        <div className='text-2xl flex justify-center gap-4'>
+          <button><IoIosArrowDropleftCircle/></button>
+          <button><IoIosArrowDropright/></button>
+        </div>
+      </div>
+    </section>
     </>
-    
   )
 }
 
 export default Home
+
 
   -->
 

@@ -17,8 +17,6 @@ const Home = () => {
   return (
     <>
     <section id='Bannerpart' className='bg-black h-[100vh]'>
-
-
     <div className='flex text-white'>
           <div>
           <img className='mt-[64px]' src="/src/Images/bannerPat.png" alt="" />
@@ -50,9 +48,7 @@ const Home = () => {
       <div className='w-[650px] h-[650px] absolute rounded-[50%] border-black border-2 top-[50%] left-[50%] -translate-1/2 '>
       <img src="/src/Images/Ellipse 10.png" alt="" />
     </div>
-      </div>   
-
-
+      </div>    
   </section>
 
 
@@ -179,9 +175,6 @@ const Home = () => {
   </div>
 
 </section>
-
-
-
 
 
 
