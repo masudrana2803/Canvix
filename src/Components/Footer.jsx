@@ -50,11 +50,11 @@ const Footer = () => {
               <div id='FooterLast' className='flex justify-around flex gap-[105px]  text-white pt-[29px] pl-[100px] pr-[100px] pb-[100px]'>
               <div>
                 <h2 className='text-[20px] font-roboto font-[600]'>Copyright by</h2>
-                <p>Designed by Iconstica.com</p>
+                <p className='text-[16px] font-dm font-[400] '>Designed by Iconstica.com</p>
               </div>
               <div>
                 <h2 className='text-[20px] font-roboto font-[600]'>Contact us</h2>
-                <p>+0 12 457 4578</p>
+                <p className='text-[16px] font-dm font-[400]'>+0 12 457 4578</p>
               </div>
               <div>
                 <h2 className='text-[20px] font-roboto font-[600]'>Address</h2>
