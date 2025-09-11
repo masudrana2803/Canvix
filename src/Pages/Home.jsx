@@ -16,6 +16,7 @@ import TrialbtnB from '../Tools/TrialbtnB';
 const Home = () => {
   return (
     <>
+    {/* Banner part */}
     <section id='Bannerpart' className='bg-black h-[100vh]'>
     <div className='flex text-white'>
           <div>
@@ -51,6 +52,7 @@ const Home = () => {
       </div>    
   </section>
 
+{/* Service part */}
 
 <section id='Services' className='mt-[116px] flex justify-center'>
 
@@ -97,6 +99,8 @@ const Home = () => {
 
 </section>
 
+{/* Process part */}
+
 <section id='process' className='pt-[107px] pb-[129px]'>
 
 <div className='w-[619px] m-auto mb-[80px] '>
@@ -113,6 +117,9 @@ const Home = () => {
 
 </section>
 
+{/* Showcase part */}
+
+
 <section id='Showcase' className=' relative'>
 
     <div className='mb-[87px]'>
@@ -124,12 +131,12 @@ const Home = () => {
     <div className="container mb-[103px]">
     <div id='ShowcaseImage' className='flex justify-between gap-10 flex-wrap'>
     <div className='gap-5'>
-  <div className='w-[664px] w-[450px] mb-[88px] '>
+  <div className='lg:w-[664px] w-[450px] mb-[88px] '>
     <img src="/src/Images/Showcase1.jpg" alt="" />
     <h2 className='text-[30px] font-roboto font-[600]'>Web UI design</h2>
     <h2 className='text-[16px] font-dm font-[400] tracking-wide '>Creative  UI design</h2>
   </div>
-  <div className='w-[664px] w-[450px]'>
+  <div className='lg:w-[664px] w-[450px]'>
     <img src="/src/Images/Showcase2.jpg" alt="" />
     <h2 className='text-[30px] font-roboto font-[600]'>UI Design</h2>
     <h2 className='text-[16px] font-dm font-[400]'>Creative Rebranding for logo</h2>
@@ -152,6 +159,8 @@ const Home = () => {
 
 </section>
 
+
+{/* Slider part */}
 
 <section id='SliderBottom'className='mb-117px' >
 
