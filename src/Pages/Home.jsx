@@ -8,6 +8,11 @@ import { VscCircuitBoard } from "react-icons/vsc";
 import { LiaCheckDoubleSolid } from "react-icons/lia";
 import { IoIosArrowDropleftCircle } from "react-icons/io";
 import { IoIosArrowDropright } from "react-icons/io";
+import { BiSolidPen } from "react-icons/bi";
+import { TbSpeakerphone } from "react-icons/tb";
+import { IoIosColorPalette } from "react-icons/io";
+import { VscCallOutgoing } from "react-icons/vsc";
+import { TbBrandAdobe } from "react-icons/tb";
 import Commoncard from '../Tools/Commoncard'
 import Trialbtn from '../Tools/Trialbtn';
 import CommonProcess from '../Tools/CommonProcess';
@@ -35,7 +40,7 @@ const Home = () => {
             <div>
               <h2 className='text-brandclr p-[0px] font-roboto text-[26px] '>Trusted by Leading Brands</h2>
             </div> 
-            <div id='brand_images' className='flex p-[5px] ml-[-20px] gap-[10px] pb-[111px]'>
+            <div id='brand_images' className='flex p-[5px] ml-[-20px] gap-[10px] lg:pb-[111px] sm:w-[50%]'>
               <img src="/src/Images/brand1.png" alt="brand1" />
               <img src="/src/Images/brand2.png" alt="brand2" />
               <img src="/src/Images/brand3.png" alt="brand3" />
@@ -70,11 +75,11 @@ const Home = () => {
 
     <div className='flex flex-wrap gap-[66px] justify-between lg:p-[260px] pt-0 pb-[93px]'>
   <Commoncard content1={<SlPencil/>} content2={'Content Marketing '} content3={'Our team creates engaging and shareable content that resonates with your audience, drives organic traffic'}/>
-  <Commoncard content1={<SlPencil/>} content2={'Graphic Design'} content3={'Unlock the power of visual storytelling with our expert graphic design services tailored to elevate your brand and captivate.'}/>
-  <Commoncard content1={<SlPencil/>} content2={'Digital Marketing '} content3={"Elevate your brand's online presence with our data-driven digital marketing strategies. From SEO and content marketing"}/>
-  <Commoncard content1={<SlPencil/>} content2={'Web Design'} content3={'We specialize in creating visually stunning, user-friendly websites that align with your brand identity and deliver an exceptional.'}/>
-  <Commoncard content1={<SlPencil/>} content2={'IT Consulting'} content3={'IT consulting, or information technology consulting, refers to the practice of providing advisory and implementation services'}/>
-  <Commoncard content1={<SlPencil/>} content2={'Brand Identity '} content3={'It involves creating a unique and recognizable identity that sets the brand apart from competitors and resonates with the target audience.'}/>
+  <Commoncard content1={<BiSolidPen/>} content2={'Graphic Design'} content3={'Unlock the power of visual storytelling with our expert graphic design services tailored to elevate your brand and captivate.'}/>
+  <Commoncard content1={<TbSpeakerphone/>} content2={'Digital Marketing '} content3={"Elevate your brand's online presence with our data-driven digital marketing strategies. From SEO and content marketing"}/>
+  <Commoncard content1={<IoIosColorPalette/>} content2={'Web Design'} content3={'We specialize in creating visually stunning, user-friendly websites that align with your brand identity and deliver an exceptional.'}/>
+  <Commoncard content1={<VscCallOutgoing/>} content2={'IT Consulting'} content3={'IT consulting, or information technology consulting, refers to the practice of providing advisory and implementation services'}/>
+  <Commoncard content1={<TbBrandAdobe/>} content2={'Brand Identity '} content3={'It involves creating a unique and recognizable identity that sets the brand apart from competitors and resonates with the target audience.'}/>
 
 
   </div>
@@ -156,7 +161,7 @@ const Home = () => {
   </div>
 
   {/* Trial Button */}
-  <div className='absolute top-[140px] right-4 md:right-10'>
+  <div className='absolute top-[130px] right-4 md:right-70'>
     <TrialbtnB content1={<IoIosArrowDroprightCircle />} content2={'Start Your Free Trial'} />
   </div>
 
@@ -180,7 +185,7 @@ const Home = () => {
       </div>
 
       {/* Column 2 */}
-      <div className='space-y-10 mt-10 md:mt-0'>
+      <div className='space-y-10 mt-10 md:mt-0 lg:mt-20'>
         <div className='w-full md:w-[450px] lg:w-[664px]'>
           <img src="/src/Images/Showcase3.jpg" alt="Digital Strategy" className='w-full h-auto' />
           <h2 className='text-[30px] font-roboto font-semibold'>To design Digital Strategy</h2>
