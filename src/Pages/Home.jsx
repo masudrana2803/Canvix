@@ -22,8 +22,8 @@ const Home = () => {
           <div>
           <img className='mt-[64px]' src="/src/Images/bannerPat.png" alt="" />
           </div>
-          <div id="banner" className='h-[398px] mt-[100px] ml-[98px] w-[608px]'>
-            <div id="bannertxt" className='text-white font-weight:600 text-[64px] mt-[50px]'>
+          <div id="banner" className='h-[398px] lg:mt-[100px] lg:ml-[98px] ml-2 mr-2 w-[608px]'>
+            <div id="bannertxt" className='text-white font-weight:600 lg:text-[64px] text-[35px] mt-[25px] mb-[25px]'>
                 <h2>Ready to take your </h2>
                 <h2 className='text-brandclr'>Business Growth </h2>
                 <h2>to the next level?</h2>
@@ -43,8 +43,8 @@ const Home = () => {
             </div> 
           </div>
     </div>
-    <div className=' w-[800px] h-[800px] relative rounded-[50%] right-[-750px] top-[-500px] border-[#99EDE5] border-2 mt-[80px] ml-[173px] '>
-      <div className='w-[700px] h-[700px] absolute top-[50%] rounded-[50%] left-[50%] -translate-1/2 border-[#B2F1EB] border-2 '>
+    <div id='Circle' className='lg:block hidden w-[800px] h-[800px] relative rounded-[50%] right-[-750px] top-[-500px] border-[#99EDE5] border-2 mt-[80px] ml-[173px] '>
+      <div className=' lg:block  w-[700px] h-[700px] absolute top-[50%] rounded-[50%] left-[50%] -translate-1/2 border-[#B2F1EB] border-2 '>
     </div>
       <div className='w-[650px] h-[650px] absolute rounded-[50%] border-black border-2 top-[50%] left-[50%] -translate-1/2 '>
       <img src="/src/Images/Ellipse 10.png" alt="" />
@@ -68,7 +68,7 @@ const Home = () => {
 </section>
 <div className="container">
 
-    <div className='flex flex-wrap gap-[66px] justify-between p-[260px] pt-0 pb-[93px]'>
+    <div className='flex flex-wrap gap-[66px] justify-between lg:p-[260px] pt-0 pb-[93px]'>
   <Commoncard content1={<SlPencil/>} content2={'Content Marketing '} content3={'Our team creates engaging and shareable content that resonates with your audience, drives organic traffic'}/>
   <Commoncard content1={<SlPencil/>} content2={'Graphic Design'} content3={'Unlock the power of visual storytelling with our expert graphic design services tailored to elevate your brand and captivate.'}/>
   <Commoncard content1={<SlPencil/>} content2={'Digital Marketing '} content3={"Elevate your brand's online presence with our data-driven digital marketing strategies. From SEO and content marketing"}/>
@@ -80,7 +80,38 @@ const Home = () => {
   </div>
 </div>
 
-<section id='About'className=' pt-[100px] pl-[260px] pr-[260px] bg-black'>
+{/* About part */}
+<section id='About' className='pt-[100px] px-4 md:px-10 lg:px-[260px] bg-black'>
+  <div className='flex flex-col lg:flex-row gap-10 lg:gap-14'>
+
+    {/* Image Section */}
+    <div className='w-full lg:w-[640px]'>
+      <img src="/src/Images/AboutImage1.png" alt="AboutImage1" className='w-full h-auto' />
+    </div>
+
+    {/* Text Section */}
+    <div className='w-full lg:w-[586px] text-white mt-4 lg:mt-[-10px]'>
+      <div className='flex'>
+        <Commonhead content1="About Us" />
+      </div>
+
+      <h2 className='font-roboto font-semibold text-[32px] md:text-[48px] lg:text-[64px] tracking-wider leading-tight pb-2'>
+        The core mission behind all our work
+      </h2>
+
+      <p className='text-[16px] leading-relaxed mb-4'>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit metus ut tortor purus tincidunt sed lectus ut eros, turpis tincidunt id.
+      </p>
+
+      <img src="/src/Images/AboutCounter.png" alt="about" className='w-full h-auto mb-4' />
+
+      <Trialbtn content1={<IoIosArrowDroprightCircle />} content2={"Start Your Free Trial"} />
+    </div>
+
+  </div>
+</section>
+
+{/* <section id='About'className=' pt-[100px] pl-[260px] pr-[260px] bg-black'>
 
   <div className='flex gap-14'>
     <div className='w-[640px]'>
@@ -97,7 +128,7 @@ const Home = () => {
     </div>
   </div>
 
-</section>
+</section> */}
 
 {/* Process part */}
 
@@ -119,8 +150,55 @@ const Home = () => {
 
 {/* Showcase part */}
 
+<section id='Showcase' className='relative px-4 py-10'>
+  <div className='mb-10'>
+    <Commonhead content2={'Recent Showcase'} />
+  </div>
 
-<section id='Showcase' className=' relative'>
+  {/* Trial Button */}
+  <div className='absolute top-[140px] right-4 md:right-10'>
+    <TrialbtnB content1={<IoIosArrowDroprightCircle />} content2={'Start Your Free Trial'} />
+  </div>
+
+  {/* Showcase Images */}
+  <div className="container mx-auto mb-24">
+    <div id='ShowcaseImage' className='grid grid-cols-1 md:grid-cols-2 gap-10'>
+
+      {/* Column 1 */}
+      <div className='space-y-10'>
+        <div className='w-full md:w-[450px] lg:w-[664px]'>
+          <img src="/src/Images/Showcase1.jpg" alt="Web UI design" className='w-full h-auto' />
+          <h2 className='text-[30px] font-roboto font-semibold'>Web UI design</h2>
+          <h2 className='text-[16px] font-dm font-normal tracking-wide'>Creative UI design</h2>
+        </div>
+
+        <div className='w-full md:w-[450px] lg:w-[664px]'>
+          <img src="/src/Images/Showcase2.jpg" alt="UI Design" className='w-full h-auto' />
+          <h2 className='text-[30px] font-roboto font-semibold'>UI Design</h2>
+          <h2 className='text-[16px] font-dm font-normal'>Creative Rebranding for logo</h2>
+        </div>
+      </div>
+
+      {/* Column 2 */}
+      <div className='space-y-10 mt-10 md:mt-0'>
+        <div className='w-full md:w-[450px] lg:w-[664px]'>
+          <img src="/src/Images/Showcase3.jpg" alt="Digital Strategy" className='w-full h-auto' />
+          <h2 className='text-[30px] font-roboto font-semibold'>To design Digital Strategy</h2>
+          <h2 className='text-[16px] font-dm font-normal'>Social Media Marketing</h2>
+        </div>
+
+        <div className='w-full md:w-[450px] lg:w-[664px]'>
+          <img src="/src/Images/Showcase4.jpg" alt="UI Design" className='w-full h-auto' />
+          <h2 className='text-[30px] font-roboto font-semibold'>UI Design</h2>
+          <h2 className='text-[16px] font-dm font-normal'>Creative Rebranding for logo</h2>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{/* <section id='Showcase' className=' relative flex-wrap '>
 
     <div className='mb-[87px]'>
       <Commonhead content2={'Recent Showcase'}/>
@@ -129,7 +207,7 @@ const Home = () => {
     <TrialbtnB content1={<IoIosArrowDroprightCircle/>} content2={'Start Your Free Trial'}/>
     </div>
     <div className="container mb-[103px]">
-    <div id='ShowcaseImage' className='flex justify-between gap-10 flex-wrap'>
+    <div id='ShowcaseImage' className='flex justify-between gap-10 flex-wrap max-w-[50%] lg: max-w-fit'>
     <div className='gap-5'>
   <div className='lg:w-[664px] w-[450px] mb-[88px] '>
     <img src="/src/Images/Showcase1.jpg" alt="" />
@@ -157,7 +235,9 @@ const Home = () => {
     </div>
     </div>
 
-</section>
+</section> */}
+
+
 
 
 {/* Slider part */}
